@@ -1,0 +1,107 @@
+/* Chatbot container style */
+.chat-container {
+    position: fixed;
+    bottom: 0;
+    right: 10px;
+    width: 300px;
+    height: 400px;
+    background-color: #ffffff;
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+}
+
+/* Show the chat container when active */
+.chat-container.active {
+    display: flex;
+}
+
+/* Header styling for the chat window */
+.chat-container h2 {
+    text-align: center;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    margin: 0;
+    font-size: 18px;
+}
+
+/* Chatbox area */
+#chat-box {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 10px;
+    height: 280px;
+    border-bottom: 2px solid #007bff;
+}
+
+/* Message styling */
+.chat-message {
+    margin: 5px 0;
+    padding: 8px 12px;
+    border-radius: 20px;
+    max-width: 80%;
+}
+
+/* User's message styling */
+.chat-message.user {
+    background-color: #f0f0f0;
+    align-self: flex-end;
+    border-top-right-radius: 0;
+}
+
+/* Bot's message styling */
+.chat-message.bot {
+    background-color: #007bff;
+    color: #fff;
+    align-self: flex-start;
+    border-top-left-radius: 0;
+}
+
+/* Input and button styles */
+#user-input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 15%;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Fixed position button for toggling the chatbot */
+.chat-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+}
+
+/* Button hover effect */
+.chat-icon:hover {
+    background-color: #0056b3;
+}
